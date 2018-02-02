@@ -17,7 +17,7 @@
       <visual>
         <origin xyz="0 0 0.0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://neo_simulation/robots/mpo_700/meshes/MPO-700-SICK.STL" />
+          <mesh filename="package://neo_mpo_700/robot_model/mpo_700/meshes/MPO-700-SICK.STL" />
         </geometry>
         <material name="Neobotix/Yellow" />
       </visual>
