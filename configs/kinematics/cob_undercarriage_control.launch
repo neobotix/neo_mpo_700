@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- undercarriage_control_node -->
+	<node pkg="cob_undercarriage_ctrl" type="cob_undercarriage_ctrl_node" name="undercarriage_ctrl_node" respawn="false" output="screen">
+		<remap from="command" to="/cmd_vel"/>
+		<remap from="/emergency_stop_state" to="/Emergency_Stop_State"/>
+		
+	</node>
+</launch>

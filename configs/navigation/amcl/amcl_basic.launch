@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="env_map" default="$(find neo_mpo_500)/configs/navigation/gmapping/maps/$(env MAP_NAME).yaml" />
+
+  <!-- MAP SERVER -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
+  </node>
+
+    <!-- AMCL Node -->
+  <node pkg="amcl" type="amcl" name="amcl">
+
+    <remap from="/scan" to="/cob_scan_unifier/scan_unified" />
+
+    <rosparam file="$(find neo_mpo_500)/configs/navigation/amcl/amcl_basic.yaml" command="load" />
+
+ </node>
+
+</launch>

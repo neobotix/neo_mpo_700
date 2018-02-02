@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+	<!--Parameter-->
+        <!--param name="IniDirectory" value="$(find neo_mpo_700)/ros/launch/cob_can_and_kinematics/IniFiles/"/>
+	<param name="PublishEffort" value="false"/-->
+        <rosparam command="load" file="$(find neo_mpo_700)/configs/kinematics/$(env ROBOT)_CanCtrl.yaml"/>
+        <rosparam command="load" file="$(find neo_mpo_700)/configs/kinematics/$(env ROBOT)_Platform.yaml"/>
+	<!-- base_drive_chain_node -->
+	<node pkg="cob_base_drive_chain" type="cob_base_drive_chain_node" name="base_drive_can_node" respawn="false" output="screen" />
+</launch>
