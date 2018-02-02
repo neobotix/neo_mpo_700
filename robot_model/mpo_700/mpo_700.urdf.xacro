@@ -21,11 +21,11 @@
 
   <!-- Sensors -->
   <xacro:sick_s300_laser_v0 name="sick_s300_laser_front" parent="base_link" ros_topic="sick_s300_front/scan">
-  	<origin xyz="0.360 0 0.223" rpy="3.14 0 1.57" />
+  	<origin xyz="0.360 0 0.223" rpy="3.14 0 0" />
   </xacro:sick_s300_laser_v0>
 
   <xacro:sick_s300_laser_v0 name="sick_s300_laser_back" parent="base_link" ros_topic="sick_s300_back/scan">
-  	<origin xyz="-0.360 0 0.223" rpy="3.14 0 -1.57" />
+  	<origin xyz="-0.360 0 0.223" rpy="3.14 0 -3.14" />
   </xacro:sick_s300_laser_v0>
 
 </robot>

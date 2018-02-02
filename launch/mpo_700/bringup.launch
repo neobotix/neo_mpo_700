@@ -2,29 +2,32 @@
 
 <launch>
 
-		<!--robot platform-->
+	<!--robot platform-->
 
-		<!--relayboard V2-->
-		<include file="$(find neo_mpo_700)/configs/relayboard_v2/relayboard_v2.launch"/>
+	<!--relayboard V2-->
+	<include file="$(find neo_mpo_700)/configs/relayboard_v2/relayboard_v2.launch"/>
 
-		<!--kinematics-->
-		<include file="$(find neo_mpo_700)/configs/kinematics/kinematics.launch"/> 
+	<!--kinematics-->
+	<include file="$(find neo_mpo_700)/configs/kinematics/kinematics.launch"/> 
 
-		<!--sensors-->
-		<!--s300 at the front and back-->
-                <include file="$(find neo_mpo_700)/configs/sick/sick_s300_front_back.launch"/>
+	<!--sensors-->
+	<!--s300 at the front and back-->
+        <include file="$(find neo_mpo_700)/configs/sick/sick_s300_front_back.launch"/>
 
-		<!--neobotix basic joystick node-->
-                <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
+	<!--neobotix basic joystick node-->
+        <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
 
-		<!--laser scan unifier-->
-		<include file="$(find neo_mpo_700)/configs/scan_unifier/cob_scan_unifier.launch"/>
+	<!--laser scan unifier-->
+	<include file="$(find neo_mpo_700)/configs/scan_unifier/cob_scan_unifier.launch"/>
 
-		<!--robot model-->
-    		<param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_mpo_700)/robot_model/mpo_700/mpo_700.urdf.xacro'" />
-    		<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-        		<param name="use_gui" value="false" />
-    		</node>
-    		<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />			
+	<!--robot model-->
+	<param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_mpo_700)/robot_model/mpo_700/mpo_700.urdf.xacro'" />
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+		<param name="use_gui" value="false" />
+	</node>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+	<!--auto_recover-->
+	<include file="$(find neo_mpo_700)/configs/auto_recover/auto_recover.launch"/>			
 
 </launch>

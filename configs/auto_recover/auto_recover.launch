@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- upload parameters -->
+	<rosparam command="load" ns="auto_recover" file="$(find neo_mpo_700)/configs/auto_recover/auto_recover.yaml"/>
+	
+	<!-- start auto_recover node -->
+	<node pkg="neo_auto_recover" type="auto_recover_node" ns="auto_recover" name="auto_recover_node" respawn="false" output="screen">
+		<remap from="/emergency_stop_state" to="/relayboard_v2/emergency_stop_state"/>
+	</node>
+
+
+</launch>

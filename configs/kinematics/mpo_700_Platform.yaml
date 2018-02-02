@@ -17,17 +17,17 @@ DrivePrms:
    Wheel3NeutralPosition: 0.0
    Wheel4NeutralPosition: 0.0
 Geom:
-   DistWheels: 620            #[mm] 490 calau
+   DistWheels: 480            #[mm]
    RadiusWheel: 90            #[mm]
    DistSteerAxisToDriveWheelCenter: 45   #[mm]
-   Wheel1XPos: 310            #245 calau
-   Wheel1YPos: 246            #190 calau
-   Wheel2XPos: -310
-   Wheel2YPos: 246
-   Wheel3XPos: -310
-   Wheel3YPos: -246
-   Wheel4XPos: 310
-   Wheel4YPos: -246
+   Wheel1XPos: 240            #
+   Wheel1YPos: 190            #
+   Wheel2XPos: -240
+   Wheel2YPos: 190
+   Wheel3XPos: -240
+   Wheel3YPos: -190
+   Wheel4XPos: 240
+   Wheel4YPos: -190
 Config:
    Wheel1DriveMotor: 2         #0 = no motor; 1 = motor of the type neo; 2 = motor of type ham
    Wheel2DriveMotor: 2
