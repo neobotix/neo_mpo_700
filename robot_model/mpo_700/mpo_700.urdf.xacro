@@ -11,7 +11,7 @@
   <xacro:include filename="$(find neo_mpo_700)/robot_model/mpo_700/xacros/sick_s300_laser.xacro" />
 
 
-  <xacro:include filename="$(find neo_mpo_700)/robot_model/mpo_700/xacros/mpo_700_gazebo.xacro" />
+  <!--xacro:include filename="$(find neo_mpo_700)/robot_model/mpo_700/xacros/mpo_700_gazebo.xacro" /-->
 
 
   <!-- Base Macro-->
