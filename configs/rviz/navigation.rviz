@@ -63,22 +63,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        laserscanner_back_link:
+        sick_s300_laser_back_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        laserscanner_front_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_right_link:
+        sick_s300_laser_front_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -195,20 +185,16 @@ Visualization Manager:
         All Enabled: true
         base_link:
           Value: true
-        laserscanner_back_link:
-          Value: true
-        laserscanner_front_link:
-          Value: true
         map:
           Value: true
         odom:
           Value: true
-        wheel_left_link:
+        sick_s300_laser_back_link:
           Value: true
-        wheel_right_link:
+        sick_s300_laser_front_link:
           Value: true
       Marker Scale: 1
-      Name: TF
+      Name: Frames
       Show Arrows: true
       Show Axes: true
       Show Names: true
@@ -216,15 +202,19 @@ Visualization Manager:
         map:
           odom:
             base_link:
-              laserscanner_back_link:
+              sick_s300_laser_back_link:
                 {}
-              laserscanner_front_link:
-                {}
-              wheel_left_link:
-                {}
-              wheel_right_link:
+              sick_s300_laser_front_link:
                 {}
       Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 85; 0; 255
+      Enabled: true
+      Name: Footprint
+      Topic: /move_base/local_costmap/footprint
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
@@ -262,10 +252,10 @@ Visualization Manager:
         Z: 0.118538
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.939797
+      Pitch: 1.4998
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.739066
+      Yaw: 0.639066
     Saved: ~
 Window Geometry:
   Displays:
