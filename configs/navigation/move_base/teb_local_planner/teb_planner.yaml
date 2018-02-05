@@ -6,7 +6,7 @@ TebLocalPlannerROS:
 
     #Maximum translational acceleration of the robot in meters/sec^2 
 
- acc_lim_theta : 0.2
+ acc_lim_theta : 0.5
 
     #Maximum angular acceleration of the robot in radians/sec^2 
 
@@ -56,11 +56,11 @@ TebLocalPlannerROS:
 
 #Trajectory Configuration Parameters
 
- dt_ref : 0.3
+ dt_ref : 2 #0.3
 
      #Desired temporal resolution of the trajectory 
 
- min_samples  : 3
+ min_samples  : 2
 
      #Minimum number of samples 
 
