@@ -3,4 +3,4 @@ baud: 500000
 inverted: false
 frame_id: /sick_s300_laser_front_link
 scan_id: 8
-scan_intervals: [[-1.4835298641952, 1.4835298641952]] #[rad] these intervals are included to the scan +-85°
+scan_intervals: [[-1.66, 1.66]] #[rad] these intervals are included to the scan +-95°
