@@ -74,9 +74,9 @@ AMCL: ![amcl](http://wiki.ros.org/amcl)
 
 Bringup: ![bringup.launch](https://github.com/neobotix/neo_mpo_700/blob/indigo/launch/mpo/bringup.launch)
 
-Navigation with SLAM ![navigation_basic_slam.launch](https://github.com/neobotix/neo_mpo_700/blob/master/launch/mpo_700/navigation_basic_slam.launch)
+Navigation with SLAM: ![navigation_basic_slam.launch](https://github.com/neobotix/neo_mpo_700/blob/master/launch/mpo_700/navigation_basic_slam.launch)
 
-Navigation with AMCL ![navigation_basic_amcl.launch](https://github.com/neobotix/neo_mpo_700/blob/master/launch/mpo_700/navigation_basic_amcl.launch)
+Navigation with AMCL: ![navigation_basic_amcl.launch](https://github.com/neobotix/neo_mpo_700/blob/master/launch/mpo_700/navigation_basic_amcl.launch)
 
 ### Configuration:
 
