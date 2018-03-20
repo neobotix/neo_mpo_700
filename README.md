@@ -23,7 +23,7 @@ If you have any questions, just get in touch with us:
 
 # Installation
 
-1. Create a catkin workspace (![tutorial](http://wiki.ros.org/catkin/Tutorials/create_a_workspace))
+1. Create a catkin workspace ([tutorial](http://wiki.ros.org/catkin/Tutorials/create_a_workspace))
 
 2. Download all packages listed under "Additionally required Neobotix-ROS-Packages" into your workspace
 
@@ -52,13 +52,13 @@ Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
 
 ## Additionally required thid party ROS-Packages:
 
-Joystick: ![joy](http://wiki.ros.org/joy)
+Joystick: [joy](http://wiki.ros.org/joy)
 
-MoveBase: ![move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
+MoveBase: [move_base](http://wiki.ros.org/move_base) and [move_base_msgs](http://wiki.ros.org/move_base)
 
-SLAM: ![gmapping](http://wiki.ros.org/gmapping)
+SLAM: [gmapping](http://wiki.ros.org/gmapping)
 
-AMCL: ![amcl](http://wiki.ros.org/amcl)
+AMCL: [amcl](http://wiki.ros.org/amcl)
 
 ## Usage:
 
