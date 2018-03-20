@@ -46,6 +46,8 @@ Scan-Merge: ![cob_scan_unifier](https://github.com/neobotix/neo_driver)
 
 Teleoperation: ![neo_teleop](https://github.com/neobotix/neo_control)
 
+Homing and Recover: ![neo_auto_recover](https://github.com/neobotix/neo_control)
+
 Msgs: ![neo_msgs](https://github.com/neobotix/neo_msgs)
 
 Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
