@@ -16,19 +16,11 @@
 
     #####Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err.
 
-<<<<<<< HEAD
  update_min_d : 0.1
 
     #####Translational movement required before performing a filter update. (default:0.2)
 
  update_min_a: 0.1
-=======
- update_min_d : 0.2
-
-    #####Translational movement required before performing a filter update. (default:0.2)
-
- update_min_a: π/6.0
->>>>>>> 87010bf9f29bb0053d91c4d8d6aa140ce4538929
 
     #####Rotational movement required before performing a filter update.
 
