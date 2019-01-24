@@ -8,13 +8,10 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
   </node>
 
-    <!-- AMCL Node -->
+  <!-- AMCL Node -->
   <node pkg="amcl" type="amcl" name="amcl">
-
     <remap from="/scan" to="/cob_scan_unifier/scan_unified" />
-
     <rosparam file="$(find neo_mpo_700)/configs/navigation/amcl/amcl_basic.yaml" command="load" />
-
- </node>
+  </node>
 
 </launch>
