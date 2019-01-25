@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+<!-- Front laserscanner   -->
+
+	<!-- parameters -->
+	<arg name="name_front" default="sick_microscan3_front" />
+        <rosparam command="load" ns="$(arg name_front)" file="$(find neo_mpo_700)/configs/sick/microscan3/microscan3_1.yaml"/>
+	<!-- start node -->
+	<node pkg="sick_safetyscanners" type="sick_safetyscanners_node" name="$(arg name_front)_node" output="screen" ns="$(arg name_front)" >
+	</node>
+
+<!-- Back laserscanner   -->
+
+	<!-- parameters -->
+	<arg name="name_back" default="sick_microscan3_back" />
+        <rosparam command="load" ns="$(arg name_back)" file="$(find neo_mpo_700)/configs/sick/microscan3/microscan3_2.yaml"/>
+	<!-- start node -->
+	<node pkg="sick_safetyscanners" type="sick_safetyscanners_node" name="$(arg name_back)_node" output="screen" ns="$(arg name_back)" >
+	</node>
+
+</launch>
