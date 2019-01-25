@@ -12,7 +12,7 @@
 
 	<!--sensors-->
 	<!--s300 at the front and back-->
-        <include file="$(find neo_mpo_700)/configs/sick/sick_s300_front_back.launch"/>
+        <include file="$(find neo_mpo_700)/configs/sick/s300/sick_s300_front_back.launch"/>
 
 	<!--neobotix basic joystick node-->
         <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
