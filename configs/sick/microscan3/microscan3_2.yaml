@@ -10,7 +10,7 @@ host_ip: 192.168.1.9
 host_udp_port: 0
 #Host UDP Port. Zero allows system chosen port.
 
-frame_id: scan
+frame_id: laser_2_link
 #The frame name of the sensor message
 
 skip: 0
