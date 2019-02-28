@@ -56,11 +56,13 @@
 <!-- Sensors -->
 
   <xacro:sick_v0 name="laser_1" parent="base_link" ros_topic="sick_front/scan">
-  	<origin xyz="0.360 0 0.181" rpy="3.14 0 0 " />
+	<!--<origin xyz="0.360 0 0.181" rpy="3.14 0 0" />-->
+  	<origin xyz="0.338 0.288 0.223" rpy="3.14 0 0.79" />
   </xacro:sick_v0>
 
   <xacro:sick_v0 name="laser_2" parent="base_link" ros_topic="sick_back/scan">
-  	<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />
+	<!--<origin xyz="-0.360 0 0.181" rpy="3.14 0 3.14" />-->
+  	<origin xyz="-0.338 -0.288 0.223" rpy="3.14 0 3.93" />
   </xacro:sick_v0>
 
 </robot>
