@@ -76,9 +76,9 @@ Drive1:
    GearRatio: 15
    BeltRatio: 2
    Sign: -1.0
-   VelMaxEncIncrS: 500000
-   AccIncrS: 500000 #80000
-   DecIncrS: 500000 #80000
+   VelMaxEncIncrS: 1000000
+   AccIncrS: 1000000 #80000
+   DecIncrS: 1000000 #80000
    EncOffsetIncr: 0
    IsSteering: false
    CurrentToTorque: 0.10065 # Factor to convert motor active current [A] into Torque [Nm]
@@ -90,7 +90,7 @@ Steer1:
    GearRatio: 19
    BeltRatio: 1
    Sign: 1.0
-   VelMaxEncIncrS: 500000
+   VelMaxEncIncrS: 1000000
    AccIncrS: 1000000 #80000
    DecIncrS: 1000000 #80000
    EncOffsetIncr: 5562
@@ -104,9 +104,9 @@ Drive2:
    GearRatio: 15
    BeltRatio: 2
    Sign: 1.0
-   VelMaxEncIncrS: 500000
-   AccIncrS: 500000 #80000
-   DecIncrS: 500000 #80000
+   VelMaxEncIncrS: 1000000
+   AccIncrS: 1000000 #80000
+   DecIncrS: 1000000 #80000
    EncOffsetIncr: 0
    IsSteering: false
    CurrentToTorque: 0.10065 # Factor to convert motor active current [A] into Torque [Nm]
@@ -118,7 +118,7 @@ Steer2:
    GearRatio: 19
    BeltRatio: 1
    Sign: -1.0
-   VelMaxEncIncrS: 500000
+   VelMaxEncIncrS: 1000000
    AccIncrS: 1000000 #80000
    DecIncrS: 1000000 #80000
    EncOffsetIncr: -5684
@@ -132,9 +132,9 @@ Drive3:
    GearRatio: 15
    BeltRatio: 2
    Sign: -1.0
-   VelMaxEncIncrS: 500000
-   AccIncrS: 500000 #80000
-   DecIncrS: 500000 #80000
+   VelMaxEncIncrS: 1000000
+   AccIncrS: 1000000 #80000
+   DecIncrS: 1000000 #80000
    EncOffsetIncr: 0
    IsSteering: false
    CurrentToTorque: 0.10065 # Factor to convert motor active current [A] into Torque [Nm]
@@ -146,7 +146,7 @@ Steer3:
    GearRatio: 19
    BeltRatio: 1
    Sign: 1.0
-   VelMaxEncIncrS: 500000
+   VelMaxEncIncrS: 1000000
    AccIncrS: 1000000 #80000
    DecIncrS: 1000000 #80000
    EncOffsetIncr: 5758
@@ -160,9 +160,9 @@ Drive4:
    GearRatio: 15
    BeltRatio: 2
    Sign: 1.0
-   VelMaxEncIncrS: 500000
-   AccIncrS: 500000 #80000
-   DecIncrS: 500000 #80000
+   VelMaxEncIncrS: 1000000
+   AccIncrS: 1000000 #80000
+   DecIncrS: 1000000 #80000
    EncOffsetIncr: 0
    IsSteering: false
    CurrentToTorque: 0.10065 # Factor to convert motor active current [A] into Torque [Nm]
@@ -174,7 +174,7 @@ Steer4:
    GearRatio: 19
    BeltRatio: 1
    Sign: -1.0
-   VelMaxEncIncrS: 500000
+   VelMaxEncIncrS: 1000000
    AccIncrS: 1000000 #80000
    DecIncrS: 1000000 #80000
    EncOffsetIncr: -5441
