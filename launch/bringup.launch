@@ -11,16 +11,12 @@
 	<include file="$(find neo_mpo_700)/configs/kinematics/kinematics.launch"/> 
 
 	<!--sensors-->
-	<!--s300 at the front and back-->
-        <!--include file="$(find neo_mpo_700)/configs/lidar/sick/s300/sick_s300_front_back.launch"/-->
-	<!--microscan3 at the front left and back right-->
-        <include file="$(find neo_mpo_700)/configs/lidar/sick/microscan3/sick_microscan3.launch"/>
+
+	<!--LiDAR-->
+	<include file="$(find neo_mpo_700)/configs/lidar/lidar.launch"/>
 
 	<!--neobotix basic joystick node-->
-        <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
-
-	<!--laser scan unifier-->
-	<include file="$(find neo_mpo_700)/configs/scan_unifier/cob_scan_unifier.launch"/>
+    <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
 
 	<!--robot model-->
 	<param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_mpo_700)/robot_model/mpo_700/mpo_700.urdf.xacro'" />
