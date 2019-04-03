@@ -1,4 +1,4 @@
 loop_rate: 100
 input_scans:
-- /laser_1/scan_filtered
-- /laser_2/scan_filtered
+- /lidar_1/scan_filtered
+- /lidar_2/scan_filtered

@@ -12,9 +12,9 @@
 
 	<!--sensors-->
 	<!--s300 at the front and back-->
-        <!--include file="$(find neo_mpo_700)/configs/sick/s300/sick_s300_front_back.launch"/-->
+        <!--include file="$(find neo_mpo_700)/configs/lidar/sick/s300/sick_s300_front_back.launch"/-->
 	<!--microscan3 at the front left and back right-->
-        <include file="$(find neo_mpo_700)/configs/sick/microscan3/sick_microscan3.launch"/>
+        <include file="$(find neo_mpo_700)/configs/lidar/sick/microscan3/sick_microscan3.launch"/>
 
 	<!--neobotix basic joystick node-->
         <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>

@@ -1,4 +1,4 @@
-sensor_ip: 192.168.1.30
+sensor_ip: 192.168.1.31
 #Sensor IP address. Can be passed as an argument to the launch file.
 
 sensor_tcp_port: 2122
@@ -7,10 +7,10 @@ sensor_tcp_port: 2122
 host_ip: 192.168.1.10
 #Host IP address. Can be passed as an argument to the launch file.
 
-host_udp_port: 6060
+host_udp_port: 6061
 #Host UDP Port. Zero allows system chosen port.
 
-frame_id: laser_1_link
+frame_id: lidar_2_link
 #The frame name of the sensor message
 
 skip: 0
