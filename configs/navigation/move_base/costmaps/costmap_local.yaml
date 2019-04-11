@@ -9,5 +9,7 @@ local_costmap:
   max_obstacle_height: 2.0
   width: 5
   height: 5
-  resolution: 0.2
+  resolution: 0.1
   transfrom_tolerance: 0.5
+  always_send_full_costmap: false
+
