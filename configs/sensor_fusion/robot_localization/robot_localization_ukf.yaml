@@ -120,7 +120,7 @@ odom0_pose_rejection_threshold: 5
 odom0_twist_rejection_threshold: 1
 
 # IMU
-imu0: imu/data
+imu0: imu/data_raw
 
 # x, y, z, 
 # roll, pitch, yaw, 

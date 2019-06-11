@@ -16,6 +16,9 @@
     # supported data rates: 4 8 16 24 32 40 ... 1000 (in ms)
     <param name="period" value="4"/>
 
+    #frame id of IMU
+    <param name="frame_id" value="imu_1_link"/>
+
     # optional param serial_number, default is -1
     <!-- <param name="serial_number" value="123456"/> -->
 
