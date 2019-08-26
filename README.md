@@ -2,7 +2,7 @@
 
 This package contains configuration and launch files for Neobotix MPO-700.
 
-![Neobotix MPO-700](http://www.neobotix-roboter.de/fileadmin/_processed_/2/5/csm_omnidirektional-MPO-700-Hauptansicht_02_45470f9829.jpg)![Neobotix MMO-700](http://www.neobotix-roboter.de/fileadmin/_processed_/9/8/csm_MMO-700-UR10-Main_01_fdf4bc6d22.jpg)
+![Neobotix MPO-700](http://www.neobotix-roboter.de/fileadmin/_processed_/2/5/csm_omnidirektional-MPO-700-Hauptansicht_02_45470f9829.jpg)
 
 The omnidirectional [MPO-700](http://www.neobotix-robots.com/omnidirectional-robot-mpo-700.html) is the ideal base for high-end service robots. Its four Omni-Drive-Modules enable it to move extremely smoothly into any direction. This robot is even capable of rotating freely while driving to its destination. The Omni-Drive-Modules of the MPO-700 feature important benefits compared to other omnidirectional drive kinematics, like for example the MPO-500's Mecanum wheels.
 
