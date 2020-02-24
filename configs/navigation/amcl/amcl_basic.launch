@@ -10,7 +10,7 @@
 
   <!-- AMCL Node -->
   <node pkg="amcl" type="amcl" name="amcl">
-    <remap from="/scan" to="/cob_scan_unifier/scan_unified" />
+    <remap from="/scan" to="/lidar_1/scan_filtered" />
     <rosparam file="$(find neo_mpo_700)/configs/navigation/amcl/amcl_basic.yaml" command="load" />
   </node>
 
