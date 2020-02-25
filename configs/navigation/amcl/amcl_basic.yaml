@@ -136,23 +136,23 @@
 
     #####Which model to use, either "diff", "omni", "diff-corrected" or "omni-corrected".
 
- odom_alpha1 : 0.2
+ odom_alpha1 : 0.002
 
     #####Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion.
 
- #odom_alpha2 : 0.2
+ odom_alpha2 : 0.002
 
     #####Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion.
 
- odom_alpha3 : 0.2
+ odom_alpha3 : 0.002
 
     #####Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion.
 
- #odom_alpha4 : 0.2
+ odom_alpha4 : 0.002
 
     #####Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion.
 
- #odom_alpha5 : 0.2
+ odom_alpha5 : 0.002
 
     #####Translation-related noise parameter (only used if model is "omni").
 
