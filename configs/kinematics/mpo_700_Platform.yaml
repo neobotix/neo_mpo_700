@@ -18,7 +18,7 @@ DrivePrms:
    Wheel4NeutralPosition: 0.0
 Geom:
    DistWheels: 480            #[mm]
-   RadiusWheel: 88            #[mm]
+   RadiusWheel: 88            # 90 => flat, 88 => round wheels [mm]
    DistSteerAxisToDriveWheelCenter: 45   #[mm]
    Wheel1XPos: 240            #
    Wheel1YPos: 190            #
