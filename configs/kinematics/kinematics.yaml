@@ -12,6 +12,7 @@ steer_low_pass: 0.5
 max_steer_vel: 8.0
 motor_delay: 0.0
 broadcast_tf: true
+measure_torque: false
 
 can_iface: can0
 motor_timeout: 1.0
@@ -23,6 +24,7 @@ drive0:
   rot_sign: -1
   gear_ratio: 30
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
 steer0:
   can_id: 1
   joint_name: fl_caster_rotation_joint
@@ -41,6 +43,7 @@ drive1:
   rot_sign: 1
   gear_ratio: 30
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
 steer1:
   can_id: 3
   joint_name: bl_caster_rotation_joint
@@ -59,6 +62,7 @@ drive2:
   rot_sign: -1
   gear_ratio: 30
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
 steer2:
   can_id: 5
   joint_name: br_caster_rotation_joint
@@ -77,6 +81,7 @@ drive3:
   rot_sign: 1
   gear_ratio: 30
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
 steer3:
   can_id: 7
   joint_name: fr_caster_rotation_joint
