@@ -3,7 +3,7 @@ num_wheels: 4
 control_rate: 100
 wheel_radius: 0.088
 wheel_lever_arm: 0.045
-zero_vel_threshold: 0.005
+zero_vel_threshold: 0.002
 small_vel_threshold: 0.02
 steer_hysteresis: 30
 steer_gain: 10
