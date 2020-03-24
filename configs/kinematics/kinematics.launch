@@ -1,10 +1,14 @@
 <?xml version="1.0"?>
 <launch>
-	<!--robot platform-->
-	<!--base_drive_chain-->
-    <include file="$(find neo_mpo_700)/configs/kinematics/cob_base_drive_chain.launch"/>
-	<!--undercarriage_controll-->
-    <include file="$(find neo_mpo_700)/configs/kinematics/cob_undercarriage_control.launch"/>
+	
+    <!-- upload parameters -->
+    <rosparam command="load" ns="kinematics_omnidrive" file="$(find neo_mpo_700)/configs/kinematics/kinematics.yaml"/>
+	
+    <!-- start nodes -->
+    <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_node" ns="kinematics_omnidrive" name="neo_omnidrive_node" respawn="false" output="screen"/>
+
+    <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_socketcan" ns="kinematics_omnidrive" name="neo_omnidrive_socketcan" respawn="false" output="screen">
+      <remap from="emergency_stop_state" to="/relayboard_v2/emergency_stop_state"/>
+    </node>
+
 </launch>
-
-

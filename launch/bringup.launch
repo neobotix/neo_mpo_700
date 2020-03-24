@@ -8,7 +8,7 @@
 	<include file="$(find neo_mpo_700)/configs/relayboard_v2/relayboard_v2.launch"/>
 
 	<!--kinematics-->
-	<include file="$(find neo_mpo_700)/configs/kinematics/kinematics.launch"/> 
+	<include file="$(find neo_mpo_700)/configs/kinematics/kinematics.launch"/>
 
 	<!--sensors-->
 
@@ -16,7 +16,7 @@
 	<include file="$(find neo_mpo_700)/configs/lidar/lidar.launch"/>
 
 	<!--neobotix basic joystick node-->
-    <include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
+	<include file="$(find neo_mpo_700)/configs/teleop/teleop.launch"/>
 
 	<!--robot model-->
 	<param name="robot_description" command="$(find xacro)/xacro.py '$(find neo_mpo_700)/robot_model/mpo_700/mpo_700.urdf.xacro'" />
@@ -24,8 +24,5 @@
 		<param name="use_gui" value="false" />
 	</node>
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
-
-	<!--auto_recover-->
-	<include file="$(find neo_mpo_700)/configs/auto_recover/auto_recover.launch"/>			
 
 </launch>
