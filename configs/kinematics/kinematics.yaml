@@ -3,9 +3,10 @@ num_wheels: 4
 control_rate: 100
 wheel_radius: 0.088
 wheel_lever_arm: 0.045
-zero_vel_threshold: 0.002
-small_vel_threshold: 0.02
+zero_vel_threshold: 0.005
+small_vel_threshold: 0.03
 steer_hysteresis: 30
+steer_hysteresis_dynamic: 5
 steer_gain: 10
 steer_lookahead: 0.06
 steer_low_pass: 0.5
@@ -15,7 +16,9 @@ broadcast_tf: true
 measure_torque: false
 
 can_iface: can0
-motor_timeout: 1.0
+cmd_timeout: 1.0
+trajectory_timeout: 0.2
+motor_timeout: 0.5
 home_vel: -1.0
 
 drive0:
