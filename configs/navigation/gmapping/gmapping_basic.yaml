@@ -76,7 +76,7 @@
   #ymax : 100.0
   #Initial map size 
 
-  delta : 0.05
+  delta : 0.03
   #Resolution of the map.
 
   #llsamplerange : 0.01
