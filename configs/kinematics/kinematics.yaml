@@ -1,32 +1,113 @@
 
+# update frequency of the kinematics node and socketcan node [Hz]
 control_rate: 100
+
+# how often to request status updates from the motors, request rate = control_rate / divider
 request_status_divider: 10
+
+# how often to send a heartbeat to the motors, heartbeat rate = control_rate / divider
 heartbeat_divider: 5
 
+# number of drive modules (need at least 2)
 num_wheels: 4
+
+# radius of the wheels [m]
 wheel_radius: 0.088
+
+# distance from the steering axis to the center of the wheels [m]
 wheel_lever_arm: 0.045
+
+# velocity below which the steering for a wheel is disabled [m/s]
+#   it is used to avoid unnecessary steering movement
 zero_vel_threshold: 0.005
+
+# velocity below which it is allowed to move a wheel into the outward position [m/s]
 small_vel_threshold: 0.03
+
+# hysteresis parameter for deciding when to move a wheel to the outward position [deg]
+#   0 deg = as soon as possible (which is unstable)
+#   >= 90 deg will disable the feature
 steer_hysteresis: 30
+
+# hysteresis parameter for deciding in which way to turn a wheel in case of ambiguity [deg]
+#   0 deg is unstable
+#   lower is better (in theory)
 steer_hysteresis_dynamic: 5
+
+# proportional gain for steering angle controller [1/s]
 steer_gain: 10
+
+# how far to predict steering angle into the future for steering angle controller [s]
+#   higher values lead to slower movement and avoid over-shooting
 steer_lookahead: 0.06
+
+# smoothing filter gain for steering angle control [1]
+#   used to decrese gear noise and wear
+#   low values will increase the smoothing
+#   1 = no filtering
 steer_low_pass: 0.5
+
+# maximum velocity for steering [rad/s]
 max_steer_vel: 8.0
+
+# smoothing filter gain for drive velocity [1]
+#   used to decrese gear noise and wear
+#   low values will increase the smoothing
+#   1 = no filtering
 drive_low_pass: 0.5
+
+# timestamp adjustment for joint_states message [s]
 motor_delay: 0.0
 
+# if to publish odometry on tf
 broadcast_tf: true
+
+# if to measure drive motor torques
+#   values are published as 'effort' in [Nm] in joint_states message
 measure_torque: false
 
+# socketcan interface name for motor CAN bus
 can_iface: can0
+
+# optional group id for motors (-1 disables the feature)
+#   usued to lower CAN bus load
 motor_group_id: 30
+
+# timeout value for /cmd_vel topic [s]
+#   upon timeout the platform will stop
+#   when sending commands over wifi a timeout of >= 1 second is needed
 cmd_timeout: 1.0
+
+# timeout value for /drive_states/joint_trajectory message [s]
+#   upon timeout the platform will stop
 trajectory_timeout: 0.2
+
+# timeout value for motor responses to status update requests [s]
+#   upon timeout all motors will be stopped
 motor_timeout: 0.5
+
+# homing velocity [rad/s]
 home_vel: -1.0
 
+# ---- motor parameters ----
+# 
+# for each drive module a set of drive and steer parameters follow:
+#   driveX:
+#     can_id: CAN bus "ID" as defined in the motor controller ROM
+#     joint_name: ROS joint name for this motor
+#     rot_sign: rotation direction (1 or -1)
+#     gear_ratio: gear ratio of the gearbox and/or belt drive
+#     enc_ticks_per_rev: number of encoder ticks per motor revolution [1]
+#     torque_constant: constant to convert from motor current [A] to motor torque in [Nm]
+#   steerX:
+#     <same parameters as drive motor plus more>
+#     center_pos_x: X position of the steering axis [m]
+#     center_pos_y: Y position of the steering axis [m]
+#     home_angle: home angle of the drive module [deg]
+#     home_dig_in: digital input pin for the homing switch
+#     enc_home_offset: encoder offset to correct home position [ticks]
+
+# ---- front left ----
 drive0:
   can_id: 2
   joint_name: fl_caster_r_wheel_joint
@@ -46,6 +127,7 @@ steer0:
   home_dig_in: 9
   enc_home_offset: 4663
 
+# ---- back left ----
 drive1:
   can_id: 4
   joint_name: bl_caster_r_wheel_joint
@@ -65,6 +147,7 @@ steer1:
   home_dig_in: 9
   enc_home_offset: -5429
 
+# ---- back right ----
 drive2:
   can_id: 6
   joint_name: br_caster_r_wheel_joint
@@ -84,6 +167,7 @@ steer2:
   home_dig_in: 9
   enc_home_offset: 4845
 
+# ---- front right ----
 drive3:
   can_id: 8
   joint_name: fr_caster_r_wheel_joint
