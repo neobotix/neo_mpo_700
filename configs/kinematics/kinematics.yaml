@@ -1,6 +1,9 @@
 
-num_wheels: 4
 control_rate: 100
+request_status_divider: 10
+heartbeat_divider: 5
+
+num_wheels: 4
 wheel_radius: 0.088
 wheel_lever_arm: 0.045
 zero_vel_threshold: 0.005
@@ -11,11 +14,14 @@ steer_gain: 10
 steer_lookahead: 0.06
 steer_low_pass: 0.5
 max_steer_vel: 8.0
+drive_low_pass: 0.5
 motor_delay: 0.0
+
 broadcast_tf: true
 measure_torque: false
 
 can_iface: can0
+motor_group_id: 30
 cmd_timeout: 1.0
 trajectory_timeout: 0.2
 motor_timeout: 0.5
