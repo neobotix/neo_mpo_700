@@ -62,6 +62,12 @@ motor_delay: 0.0
 # if to publish odometry on tf
 broadcast_tf: true
 
+# if to home automatically at startup
+auto_home: true
+
+# joystick button index for manual homeing (-1 to disable)
+homeing_button: 0
+
 # if to measure drive motor torques
 #   values are published as 'effort' in [Nm] in joint_states message
 measure_torque: false
@@ -78,7 +84,7 @@ motor_group_id: 30
 #   when sending commands over wifi a timeout of >= 1 second is needed
 cmd_timeout: 1.0
 
-# timeout value for /drive_states/joint_trajectory message [s]
+# timeout value for /drives/joint_trajectory message [s]
 #   upon timeout the platform will stop
 trajectory_timeout: 0.2
 
