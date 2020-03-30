@@ -68,6 +68,9 @@ auto_home: true
 # joystick button index for manual homeing (-1 to disable)
 homeing_button: 0
 
+# joystick button index for steering reset (-1 to disable)
+steer_reset_button: 1
+
 # if to measure drive motor torques
 #   values are published as 'effort' in [Nm] in joint_states message
 measure_torque: false
