@@ -12,7 +12,8 @@ heartbeat_divider: 5
 num_wheels: 4
 
 # radius of the wheels [m]
-wheel_radius: 0.090
+#   (round wheels = 88mm, flat wheels = 90mm)
+wheel_radius: 0.088
 
 # distance from the steering axis to the center of the wheels [m]
 wheel_lever_arm: 0.045

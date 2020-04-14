@@ -12,6 +12,7 @@ heartbeat_divider: 5
 num_wheels: 4
 
 # radius of the wheels [m]
+#   (round wheels = 88mm, flat wheels = 90mm)
 wheel_radius: 0.088
 
 # distance from the steering axis to the center of the wheels [m]
@@ -19,10 +20,10 @@ wheel_lever_arm: 0.045
 
 # velocity below which the steering for a wheel is disabled [m/s]
 #   it is used to avoid unnecessary steering movement
-zero_vel_threshold: 0.005
+zero_vel_threshold: 0.002
 
 # velocity below which it is allowed to move a wheel into the outward position [m/s]
-small_vel_threshold: 0.03
+small_vel_threshold: 0.02
 
 # hysteresis parameter for deciding when to move a wheel to the outward position [deg]
 #   0 deg = as soon as possible (which is unstable)
