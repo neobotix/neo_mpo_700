@@ -20,7 +20,7 @@ wheel_lever_arm: 0.045
 
 # velocity below which the steering for a wheel is disabled [m/s]
 #   it is used to avoid unnecessary steering movement
-zero_vel_threshold: 0.002
+zero_vel_threshold: 0.001
 
 # velocity below which it is allowed to move a wheel into the outward position [m/s]
 small_vel_threshold: 0.02

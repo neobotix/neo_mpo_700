@@ -34,13 +34,13 @@ NeoLocalPlanner:
   min_trans_vel : 0.1
 
   # The tolerance in radians for the controller in yaw/rotation when achieving its goal
-  yaw_goal_tolerance : 0.005
+  yaw_goal_tolerance : 0.01
 
   # The tolerance in meters for the controller in the x & y distance when achieving a goal
-  xy_goal_tolerance : 0.01
+  xy_goal_tolerance : 0.02
 
   # How long to fine tune for goal position after reaching tolerance limits [s]
-  goal_tune_time : 0.5
+  goal_tune_time : 3
 
   # How far to predict control pose into the future based on latest odometry [s]
   lookahead_time : 0.4
@@ -95,3 +95,6 @@ NeoLocalPlanner:
 
   # If robot has differential drive, holonomic otherwise
   differential_drive : false
+
+  # If to constrain final control step to keep last commanded direction
+  constrain_final: true
