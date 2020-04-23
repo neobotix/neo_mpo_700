@@ -1,7 +1,7 @@
 
 # exponential low pass gain for localization updates (0 to 1)
 #   (higher gain means odometry is less used / relied on)
-update_gain: 0.5
+update_gain: 0.3
 
 # time based confidence gain when in 2D mode
 confidence_gain: 0.01
