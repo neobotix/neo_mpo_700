@@ -26,9 +26,11 @@
 
   <xacro:include filename="$(find neo_mpo_700)/robot_model/mpo_700/xacros/mpo_700_wheel.xacro" />
 
+  <link name="dummy_link" />
 
   <!-- Base Macro-->
-  <xacro:mpo_700_base name="base_link">
+  <xacro:mpo_700_base name="base_link" parent="dummy_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:mpo_700_base>
 
 <xacro:mpo_700_head_0 name="mpo_700_head_0" parent="base_link">
