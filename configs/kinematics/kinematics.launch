@@ -3,6 +3,7 @@
 	
     <!-- upload parameters -->
     <rosparam command="load" ns="kinematics_omnidrive" file="$(find neo_mpo_700)/configs/kinematics/kinematics.yaml"/>
+    <rosparam command="load" ns="kinematics_omnidrive" file="$(find neo_mpo_700)/configs/kinematics/motor_params.yaml"/>
 	
     <!-- start nodes -->
     <node pkg="neo_kinematics_omnidrive" type="neo_omnidrive_node" ns="kinematics_omnidrive" name="neo_omnidrive_node" respawn="false" output="screen"/>
