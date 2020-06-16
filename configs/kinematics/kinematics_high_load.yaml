@@ -23,7 +23,7 @@ wheel_lever_arm: 0.045
 zero_vel_threshold: 0.001
 
 # velocity below which it is allowed to move a wheel into the outward position [m/s]
-small_vel_threshold: 0.02
+small_vel_threshold: 0.01
 
 # hysteresis parameter for deciding when to move a wheel to the outward position [deg]
 #   0 deg = as soon as possible (which is unstable)
