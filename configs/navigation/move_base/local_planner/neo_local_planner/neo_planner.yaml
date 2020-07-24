@@ -82,7 +82,7 @@ NeoLocalPlanner:
   max_cost : 0.95
 
   # Max velocity based on curvature [rad/s]
-  max_curve_vel : 0.2
+  max_curve_vel : 0.3
 
   # Max distance to goal when looking for it [m]
   max_goal_dist : 0.5
@@ -91,7 +91,7 @@ NeoLocalPlanner:
   max_backup_dist : 0
 
   # Minimal distance for stopping [m]
-  min_stop_dist : 0.4
+  min_stop_dist : 0.3
 
   # If robot has differential drive, holonomic otherwise
   differential_drive : false
