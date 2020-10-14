@@ -32,6 +32,7 @@ steer0:
   rot_sign: 1
   gear_ratio: 19
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
   home_angle: 180.0
   home_dig_in: 9
   enc_home_offset: 4663
@@ -52,6 +53,7 @@ steer1:
   rot_sign: -1
   gear_ratio: 19
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
   home_angle: 180.0
   home_dig_in: 9
   enc_home_offset: -5429
@@ -72,6 +74,7 @@ steer2:
   rot_sign: 1
   gear_ratio: 19
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
   home_angle: 0.0
   home_dig_in: 9
   enc_home_offset: 4845
@@ -92,6 +95,7 @@ steer3:
   rot_sign: -1
   gear_ratio: 19
   enc_ticks_per_rev: 10000
+  torque_constant: 0.116
   home_angle: 0.0
   home_dig_in: 9
   enc_home_offset: -5363
